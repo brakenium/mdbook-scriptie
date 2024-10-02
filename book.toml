@@ -1,0 +1,6 @@
+[book]
+authors = ["<Author>"]
+language = "nl"
+multilingual = false
+src = "src"
+title = "CHANGE THE TITLE"

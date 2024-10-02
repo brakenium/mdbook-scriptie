@@ -1,0 +1,35 @@
+{
+	// See https://go.microsoft.com/fwlink/?LinkId=733558
+	// for the documentation about the tasks.json format
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build book",
+			"type": "shell",
+			"command": "./mdbook.exe build --open"
+		},
+		{
+			"label": "Watch book build",
+			"type": "shell",
+			"command": "./mdbook.exe watch",
+			"runOptions": {
+				"runOn": "folderOpen"
+			}
+		},
+		{
+			"label": "Serve mdbook",
+			"type": "shell",
+			"command": "./mdbook.exe serve --open",
+			"runOptions": {
+				"runOn": "folderOpen"
+			}
+		},
+		{
+			"type": "markdownlint",
+			"problemMatcher": [
+				"$markdownlint"
+			],
+			"label": "markdownlint: Lint all Markdown files in the workspace with markdownlint"
+		}
+	]
+}
